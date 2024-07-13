@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Digital marketing</title>
+		<!-- bootstrap css and js links -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+		<!-- jquery link -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<!-- remix icon link -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		
+		<style>
+			.main{
+				display:flex;
+				flex:row;
+			}
+			.div1{
+				width:50%;
+			}
+			.div2{
+				width:50%;
+			}
+			.home_img{
+				height:637px;
+				width:487px;
+			}
+			input[id="cb1"]:checked{
+				background-color:red;
+			}
+			
+			.cards-wrapper {
+				grid-column: center-start / -1;
+				display: grid;
+				grid-auto-flow: column;
+				gap: 0rem;
+				overflow: auto;
+				padding-bottom: 0rem;
+				padding-right: var(--page-margin);
+				
+				.cardd{
+					display: grid;
+					place-content: center;
+					background-color: #d0f0ee;
+					color: #15928A;
+					height: 18rem;
+					font-size: 1.5rem;
+					min-width: 13rem;
+				}
+			}
+			.newClass{
+				color:red;
+			}
+			.project-img{
+				width: 770px;
+				height: 567px;
+			}
+			.div3{
+				width:370px;
+				margin-left:13%;
+				height: 567px;
+			}
+			.project-img1{
+				width:379px;
+				height:189px;
+			}
+			.pimg1{
+				background-color:#FF3147;
+			}
+			.white{
+				color:white;
+			}
+			.icondiv{
+				width: 270px;
+				height: 233px;
+			}
+			.icondiv:hover{
+				box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+			}
+			footer{
+				height:280px;
+			}
+			
+			@media only screen and (max-width: 600px) {
+				.main{
+					display:block;
+					
+				}
+				.div1{
+					width:100%;
+				}
+				.div2{
+					width:100%;
+				}
+				.home_img{
+					height:400px;
+					width:350px;
+				}
+				.project-img{
+					width:100%;
+					height: 467px;
+				}
+				.div3{
+					width:100%;
+					margin-left:0%;
+				}
+				.project-img1{
+					width:100%;
+					height:189px;
+				}
+				footer{
+					height:150px;
+				}
+				footer img{
+					width:100%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="w-100 main container mt-5">
+			<div class="div1 h-100  container">
+				<p class="text-danger fs-4 ">AWARD WINNING</p>
+				<p class="display-4  fw-semibold">DIGITAL MARKETING AGENCY</p>
+				<p class="text-start">
+					Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed lacus nec risus finibus feugiat et fermentum 
+				</p>
+				<button class="text-light btn rounded-0 mt-3 mb-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="background-color:#FF3147;">
+					CONTACT US
+				</button>
+				<!-- pop up form of submission -->
+				<div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-5" id="staticBackdropLabel">Talk to us</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<form method="POST" action="https://getform.io/f/bpjmjgob">
+									<input type="email" name="email" required placeholder="Work email" class="mt-1 border-0 border-bottom w-100 rounded-0">
+									<div class="row g-3 mt-3">
+										<div class="col">
+											<input type="text" name="fname" class="form-control border-0 border-bottom rounded-0" placeholder="First name" aria-label="First name" required>
+										</div>
+										<div class="col">
+											<input type="text" name="lname" class="form-control border-0 border-bottom rounded-0" placeholder="Last name" aria-label="Last name" required>
+										</div>
+									</div>
+									<div class="form-check mt-4">
+										<input class="form-check-input border-danger" required type="checkbox" value="" id="cb1">
+										<label class="form-check-label" for="cb1">
+											I agree to Fyle's terms and conditions , and  provide consent to send me communication .
+										</label>
+									</div>
+									<button type="submit" class="btn text-light w-100 fs-5 mt-1" style="background-color:#FF3147;">Contact us</button>
+								</form>
+							</div>
+						
+						</div>
+					</div>
+				</div>
+
+
+
+			</div>
+			<div class="div2 ">
+				<div style="" class="mt-2 home_img">
+					<img src="hero.png" height="100%" width="100%" class="object-fit-cover">
+				</div>
+			</div>
+		</div>
+		<div class="w-100 container mt-3">
+			<p class="text-danger">WHAT WE DO</p>
+			<div class="h-25 w-100 main ">
+				<p class="fs-1 fw-semibold float-start">SERVICES WE PROVIDE FOR YOU</p>
+				<p class=" float-start mt-3 ">
+					Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed lacus nec risus finibus feugiat et fermentum 
+				</p>
+			</div>
+			
+			<div class="w-100 p-3 cards-wrapper " style="overflow-x:scroll;">
+				<div class="card cardd me-4 float-start first position-relative img1" id="dot1" style="max-width: 18rem;">
+					<img src="1.png" class="card-img-top object-fit-cover h-100 w-100 rounded " id="a" onmouseover="showdiv(this)"  alt="...">
+					<div class=" position-absolute h-100 p-2" id="hover_card-a" onmouseout="hidediv(this)"  style="display:none;background-color:#FF3147;max-width: 18rem;">
+						<h5 class="card-title text-light text-center fs-1 mt-5"><i class="ri-file-code-line"></i></h5>
+						<p class="card-text text-light text-center fs-5">WEB DEVELOPMENT</p>
+						<p class="card-text text-light text-center" style="font-size:12px;">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+						<p class="text-center">
+							<a href="https://www.fylehq.com/" class="btn " style="background-color:white;color:#FF3147;">
+								Read more <i class="ri-arrow-right-line"></i>
+							</a>
+						</p>
+					</div>
+				</div>
+				
+				<div class="card cardd me-4 float-start first position-relative img2" style="max-width: 18rem;">
+					<img src="2.png" class="card-img-top object-fit-cover h-100 w-100 rounded " id="b" onmouseover="showdiv(this)" alt="...">
+					<div class="position-absolute h-100 p-2" id="hover_card-b" onmouseout="hidediv(this)" style="display:none;background-color:#FF3147;max-width: 18rem;">
+						<h5 class="card-title text-light text-center fs-1 mt-5"><i class="ri-file-code-line"></i></h5>
+						<p class="card-text text-light text-center fs-5">WEB DEVELOPMENT</p>
+						<p class="card-text text-light text-center" style="font-size:12px;">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+						<p class="text-center">
+							<a href="https://www.fylehq.com/" class="btn " style="background-color:white;color:#FF3147;">
+								Read more <i class="ri-arrow-right-line"></i>
+							</a>
+						</p>
+					</div>
+				</div>
+				<div class="card cardd me-4 float-start first position-relative " style="max-width: 18rem;">
+					<img src="1.png" class="card-img-top object-fit-cover h-100 w-100 rounded"id="c" onmouseover="showdiv(this)" alt="...">
+					<div class=" position-absolute h-100 p-2" id="hover_card-c" onmouseout="hidediv(this)" style="display:none;background-color:#FF3147;max-width: 18rem;">
+						<h5 class="card-title text-light text-center fs-1 mt-5"><i class="ri-file-code-line"></i></h5>
+						<p class="card-text text-light text-center fs-5">WEB DEVELOPMENT</p>
+						<p class="card-text text-light text-center" style="font-size:12px;">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+						<p class="text-center">
+							<a href="https://www.fylehq.com/" class="btn " style="background-color:white;color:#FF3147;">
+								Read more <i class="ri-arrow-right-line"></i>
+							</a>
+						</p>
+					</div>
+				</div>
+				<div class="card cardd me-4 float-start first position-relative " id= style="max-width: 18rem;">
+					<img src="3.png" class="card-img-top object-fit-cover w-100 h-100 rounded" id="d" onmouseover="showdiv(this)" alt="...">
+					<div class=" position-absolute h-100 p-2" id="hover_card-d" onmouseout="hidediv(this)" style="display:none;background-color:#FF3147;max-width: 18rem;">
+						<h5 class="card-title text-light text-center fs-1 mt-5"><i class="ri-file-code-line"></i></h5>
+						<p class="card-text text-light text-center fs-5">WEB DEVELOPMENT</p>
+						<p class="card-text text-light text-center" style="font-size:12px;">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+						<p class="text-center">
+							<a href="https://www.fylehq.com/" class="btn " style="background-color:white;color:#FF3147;">
+								Read more <i class="ri-arrow-right-line"></i>
+							</a>
+						</p>
+					</div>
+				</div>
+				<div class="card cardd me-4 float-start second position-relative" style="max-width: 18rem;">
+					<img src="2.png" class="card-img-top object-fit-cover h-100 w-100 rounded" id="e" onmouseover="showdiv(this)" alt="...">
+					<div class="position-absolute h-100 p-2" id="hover_card-e" onmouseout="hidediv(this)" style="display:none;background-color:#FF3147;max-width: 18rem;">
+						<h5 class="card-title text-light text-center fs-1 mt-5"><i class="ri-file-code-line"></i></h5>
+						<p class="card-text text-light text-center fs-5">WEB DEVELOPMENT</p>
+						<p class="card-text text-light text-center" style="font-size:12px;">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+						<p class="text-center">
+							<a href="https://www.fylehq.com/" class="btn " style="background-color:white;color:#FF3147;">
+								Read more <i class="ri-arrow-right-line"></i>
+							</a>
+						</p>
+					</div>
+				</div>
+				<div class="card cardd me-4 float-start second position-relative " style="max-width: 18rem;">
+					<img src="1.png" class="card-img-top object-fit-cover h-100 w-100 rounded" id="f" onmouseover="showdiv(this)" alt="...">
+					<div class="position-absolute h-100 p-2" id="hover_card-f" onmouseout="hidediv(this)" style="display:none;background-color:#FF3147;max-width: 18rem;">
+						<h5 class="card-title text-light text-center fs-1 mt-5"><i class="ri-file-code-line"></i></h5>
+						<p class="card-text text-light text-center fs-5">WEB DEVELOPMENT</p>
+						<p class="card-text text-light text-center" style="font-size:12px;">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+						<p class="text-center">
+							<a href="https://www.fylehq.com/" class="btn " style="background-color:white;color:#FF3147;">
+								Read more <i class="ri-arrow-right-line"></i>
+							</a>
+						</p>
+					</div>
+				</div>
+				<div class="card cardd me-4 float-start second position-relative " id="dot2" id= style="max-width: 18rem;">
+					<img src="3.png" class="card-img-top object-fit-cover w-100 h-100 rounded" id="g" onmouseover="showdiv(this)" alt="...">
+					<div class=" position-absolute h-100 p-2" id="hover_card-g" onmouseout="hidediv(this)" style="display:none;background-color:#FF3147;max-width: 18rem;">
+						<h5 class="card-title text-light text-center fs-1 mt-5"><i class="ri-file-code-line"></i></h5>
+						<p class="card-text text-light text-center fs-5">WEB DEVELOPMENT</p>
+						<p class="card-text text-light text-center" style="font-size:12px;">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+						<p class="text-center">
+							<a href="https://www.fylehq.com/" class="btn " style="background-color:white;color:#FF3147;">
+								Read more <i class="ri-arrow-right-line"></i>
+							</a>
+						</p>
+					</div>
+				</div>
+				<div class="card cardd me-4 float-start second position-relative" style="max-width: 18rem;">
+					<img src="1.png" class="card-img-top object-fit-cover w-100 h-100 rounded" id="h" onmouseover="showdiv(this)" alt="...">
+					<div class="position-absolute h-100 p-2" id="hover_card-h" onmouseout="hidediv(this)" style="display:none;background-color:#FF3147;max-width: 18rem;">
+						<h5 class="card-title text-light text-center fs-1 mt-5"><i class="ri-file-code-line"></i></h5>
+						<p class="card-text text-light text-center fs-5">WEB DEVELOPMENT</p>
+						<p class="card-text text-light text-center" style="font-size:12px;">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+						<p class="text-center">
+							<a href="https://www.fylehq.com/" class="btn " style="background-color:white;color:#FF3147;">
+								Read more <i class="ri-arrow-right-line"></i>
+							</a>
+						</p>
+					</div>
+				</div>
+				<div class="card cardd me-4 float-start third position-relative" style="max-width: 18rem;">
+					<img src="2.png" class="card-img-top object-fit-cover w-100 h-100 rounded" id="i" onmouseover="showdiv(this)" alt="...">
+					<div class="position-absolute h-100 p-2" id="hover_card-i" onmouseout="hidediv(this)" style="display:none;background-color:#FF3147;max-width: 18rem;">
+						<h5 class="card-title text-light text-center fs-1 mt-5"><i class="ri-file-code-line"></i></h5>
+						<p class="card-text text-light text-center fs-5">WEB DEVELOPMENT</p>
+						<p class="card-text text-light text-center" style="font-size:12px;">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+						<p class="text-center">
+							<a href="https://www.fylehq.com/" class="btn " style="background-color:white;color:#FF3147;">
+								Read more <i class="ri-arrow-right-line"></i>
+							</a>
+						</p>
+					</div>
+				</div>
+				<div class="card cardd me-4 float-start third position-relative " id="dot3" style="max-width: 18rem;">
+					<img src="3.png" class="card-img-top object-fit-cover w-100 h-100 rounded" id="j" onmouseover="showdiv(this)" alt="...">
+					<div class=" position-absolute h-100 p-2"id="hover_card-j" onmouseout="hidediv(this)" style="display:none;background-color:#FF3147;max-width: 18rem;">
+						<h5 class="card-title text-light text-center fs-1 mt-5"><i class="ri-file-code-line"></i></h5>
+						<p class="card-text text-light text-center fs-5">WEB DEVELOPMENT</p>
+						<p class="card-text text-light text-center" style="font-size:12px;">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+						<p class="text-center">
+							<a href="https://www.fylehq.com/" class="btn " style="background-color:white;color:#FF3147;">
+								Read more <i class="ri-arrow-right-line"></i>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="d-flex flex-row ms-2">
+				<a class="fs-2 text-decoration-none  me-4 dot" id="1" href="#dot1" >•</a>
+				<a class="fs-2 text-decoration-none  me-4 dot" id="2" href="#dot2" >•</a>
+				<a class="fs-2 text-decoration-none  me-4 dot" id="3" href="#dot3" >•</a>
+			</div>
+			
+			
+		
+		<script>
+			$(document).ready(function () {
+				//the 3 dots on the bottom right is expected to change accordingly.
+					$(".first").hover(function(){
+						$('#1').addClass('newClass');
+						$('#2').removeClass('newClass');
+						$('#3').removeClass('newClass');
+					});
+					$(".second").hover(function(){
+						$('#1').removeClass('newClass');
+						$('#3').removeClass('newClass');
+						$('#2').addClass('newClass');
+					});
+					$(".third").hover(function(){
+						$('#1').removeClass('newClass');
+						$('#2').removeClass('newClass');
+						$('#3').addClass('newClass');
+					});
+			
+					$("#1").click(function(){
+							$('#1').addClass('newClass');
+					});
+					$("#2").click(function(){
+							$('#1').removeClass('newClass');
+							$('#3').removeClass('newClass');
+							$('#2').addClass('newClass');
+					});
+					$("#3").click(function(){
+							$('#1').removeClass('newClass');
+							$('#2').removeClass('newClass');
+							$('#3').addClass('newClass');
+					});
+				
+			});
+			//on the hover of any image, the picture should be replaced with the design as shown
+			function showdiv(b){
+				document.getElementById("hover_card-" + b.id).style="display:block;background-color:#FF3147;";
+			}
+			function hidediv(c){
+				document.getElementById(c.id).style="display:none;";
+			}
+
+		</script>
+		</div>
+	
+		
+		<div class="w-100 container mt-2">
+			<p class="text-danger fs-5 text-center fw-semibold">WHY CHOOSE US</p>
+			<p class="fw-semibold fs-1 text-center">WHY WE ARE BEST</p>
+			
+			<div class="card-group ">
+				<div class="card border-0">
+					<div style="width: 72px;height: 72px;">
+						<img src="1@2x.png" class="card-img-top" width="72px" height="72px" alt="...">
+					</div>
+					<div class="card-body">
+					<h5 class="card-title">Clarified Vision & Target</h5>
+					<p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+					</div>
+					
+				</div>
+				<div class="card border-0">
+					<div style="width: 72px;height: 72px;">
+						<img src="2@2x.png" class="card-img-top" width="72px" height="72px" alt="...">
+					</div>
+					<div class="card-body">
+					<h5 class="card-title">High Performance</h5>
+					<p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+					</div>
+					
+				</div>
+				<div class="card border-0">
+					<div style="width: 72px;height: 72px;">
+						<img src="3@2x.png" class="card-img-top" width="72px" height="72px" alt="...">
+					</div>
+					<div class="card-body">
+					<h5 class="card-title">Maintain Security</h5>
+					<p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+					</div>
+					
+				</div>
+				<div class="card border-0">
+					<div style="width: 72px;height: 72px;">
+						<img src="4@2x.png" class="card-img-top" width="72px" height="72px" alt="...">
+					</div>
+					<div class="card-body">
+					<h5 class="card-title">Better Strategy & Quality</h5>
+					<p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+					</div>
+					
+				</div>
+			</div>
+			<!-- our project -->
+			<div class="w-100 mt-5">
+				<p class="text-center fw-semibold fs-5 text-danger">OUR PEOJECT</p>
+				<p class="text-center fw-semibold fs-1">WE ARE THE BEST</p>
+			
+				<div class="container main">
+					<div class="div1">
+						<div class="project-img">
+							<img src="image.png" class="object-fit-cover" id="V"  height="100%" width="100%">
+						</div>
+					</div>
+					<div class="div3  ">
+						<div class="card rounded-0 p-4 project-img1" id="p1" style="">
+							<p class="fw-semibold fs-5">Genderless Kei – Japan’s Hot</p>
+							<p>Set to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of</p>
+						</div>
+						<div class="card rounded-0 p-4 project-img1" id="p2" style="">
+							<p class="fw-semibold fs-5">Better Strategy & Quality</p>
+							<p>Set to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of</p>
+						</div>
+						<div class="card rounded-0 p-4 project-img1" id="p3" style="">
+							<p class="fw-semibold fs-5">Genderless Kei – Japan’s Hot</p>
+							<p>Set to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script>
+					$(document).ready(function(){
+						$("#p1").click(function(){
+							$("#V").attr("src","image.png");
+							$(this).addClass('pimg1');
+							$(this).addClass('white');
+							$('#p2').removeClass('pimg1');
+							$('#p2').removeClass('white');
+							$('#p3').removeClass('pimg1');
+							$('#p3').removeClass('white');
+							
+						});
+						$("#p2").click(function(){
+							$("#V").attr("src","image (2).jpg");
+							$(this).addClass('pimg1');
+							$(this).addClass('white');
+							$('#p1').removeClass('pimg1');
+							$('#p1').removeClass('white');
+							$('#p3').removeClass('pimg1');
+							$('#p3').removeClass('white');
+						
+						});
+						$("#p3").click(function(){
+							$("#V").attr("src","image (1).jpg");
+							$(this).addClass('pimg1');
+							$(this).addClass('white');
+							$('#p1').removeClass('pimg1');
+							$('#p1').removeClass('white');
+							$('#p2').removeClass('pimg1');
+							$('#p2').removeClass('white');
+							
+						});
+					});
+			</script>
+		</div>
+		<div class="w-100 bg-light mt-3">
+			<p class="text-center fw-semibold fs-5 pt-5 text-danger">EXPERT GROWTHS</p>
+			<p class="text-center fw-semibold fs-1">OUR COMPANY GROWTH</p>
+			
+			<div class="card-group p-2 container">
+				<div class="card icondiv m-5 border-0">
+					<p class="text-center mt-3">
+						<img src="heart (2).svg" class="card-img-top" style="width: 37px;height: 30px;" alt="...">
+					</p>
+					<div class="card-body">
+					<h5 class="card-title display-4 fw-semibold text-center">199 +</h5>
+					<p class="card-text text-center">Staticfied Customers</p>
+					</div>
+					
+				</div>
+				<div class="card icondiv m-5 border-0">
+					<p class="text-center mt-3">
+						<img src="clock (3).svg" class="card-img-top" style="width: 37px;height: 30px;" alt="...">
+					</p>
+					<div class="card-body">
+					<h5 class="card-title display-4 fw-semibold text-center">1591+</h5>
+					<p class="card-text text-center">Days Of Operation</p>
+					</div>
+					
+				</div>
+				<div class="card icondiv m-5 border-0">
+					<p class="text-center mt-3">
+						<img src="Path 4402.svg" class="card-img-top" style="width: 37px;height: 30px;" alt="...">
+					</p>
+					<div class="card-body">
+					<h5 class="card-title display-4 fw-semibold text-center">283 +</h5>
+					<p class="card-text text-center">Complete Project</p>
+					</div>
+					
+				</div>
+				<div class="card icondiv m-5 border-0">
+					<p class="text-center mt-3">
+						<img src="Path 4406.svg" class="card-img-top" style="width: 37px;height: 30px;" alt="...">
+					</p>
+					<div class="card-body">
+					<h5 class="card-title display-4 fw-semibold text-center">75+</h5>
+					<p class="card-text text-center">Win Awards</p>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="container w-100 p-1">
+			<p class="text-center fw-semibold fs-5 pt-5 text-danger">CLIENT'S FEEDBACK</p>
+			<p class="text-center fw-semibold fs-1">PEOPLE SAY'S ABOUT US</p>
+			<p class="text-center mt-5" >Jannat Tumpa The standard chunk of Lorem Ipsum used since the 1500s <br> is reproduced below for those interested. Sections Bonorum et Malorum original.</p>
+			<p class="text-center" style="color: #808080;">
+				<span class="fw-bold text-danger">JANNAT TUMPA</span>
+				- COO, AMERIMAR ENTERPRISES, INC.
+			</p>
+			
+		</div>
+		<footer class="w-100 pt-5 p-2" style="background-color:#FF3147;">
+			<p class="text-center mt-5 " >
+				<img src="Group 500.png">
+			</p>
+		</footer>
+	</body>
+</html>
